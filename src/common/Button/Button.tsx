@@ -3,7 +3,8 @@ import styles from "./Button.module.css"
 interface PropTypes {
     text: string,
     classname: string,
-    onclick?: () => void
+    onclick?: () => void,
+    type?: string
 }
 
 export default function Button({text, classname, onclick}: PropTypes): ReactNode {
