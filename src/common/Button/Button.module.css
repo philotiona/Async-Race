@@ -25,3 +25,17 @@
     height: 2rem;
 
 }
+.garage, .winners {
+    width: 100%;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.garage:hover, .winners:hover {
+    color: var(--color-accent);
+    background-color: transparent;
+} 
+.push, .stop {
+    background-color: transparent;
+    border: 1px solid var(--color-button);
+    width: 3rem;
+}

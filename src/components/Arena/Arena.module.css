@@ -3,6 +3,9 @@
     flex-direction: column;
     width: 90%;
     height: auto;
+    border: 0.5rem solid var(--color-accent);
+    padding: 2rem;
+    gap: 1rem;
 }
 .road {
     width: 100%;
@@ -25,4 +28,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    gap: 5px;
+}
+.pagination {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.carSvg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carLine{
+    width: 100%;
+    border-top: 1px solid var(--color-surface);
+    border-bottom: 1px solid var(--color-surface);
+}
+.ptag {
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-subtle);
+    font-size: 1.5em;
+
 }
