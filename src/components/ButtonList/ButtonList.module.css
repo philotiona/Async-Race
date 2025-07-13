@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-content: center;
+}
+.startReset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+    gap: 1rem;
+}
+.inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    gap: 1rem;
+}

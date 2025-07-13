@@ -4,6 +4,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 
 /* Prevent font size inflation */
@@ -74,10 +76,14 @@ textarea:not([rows]) {
 }
 @font-face {
   font-family: "Bulletin";
-  src: url("C:\Users\olzas\OneDrive\Desktop\Projects\async-race\async_race\src\assets\bulletinV1.ttf") format(".ttf");
+  src: url("../public/fonts/bulletinV1.ttf") format("trueType");
 }
-
+#root {
+  height: 100dvh;
+  width: 100%;
+}
 :root {
+  
   /* Base */
   --color-bg: #0f1117;           /* Deep black-blue */
   --color-surface: #1a1d25;      /* Slightly elevated dark */
@@ -95,7 +101,7 @@ textarea:not([rows]) {
   --color-accent-hover: #e6006d;
   --color-warning-hover: #d99100;
   --color-button: #0e2869;
-
+  --color-button-hover: #123789;
   /* Shadows */
   --shadow-elevated: 0 0 15px rgba(0, 234, 255, 0.25);
   --shadow-glow: 0 0 10px rgba(255, 0, 122, 0.4);
@@ -104,7 +110,8 @@ textarea:not([rows]) {
   --gradient-primary: linear-gradient(135deg, #00eaff 0%, #0066ff 100%);
   --gradient-accent: linear-gradient(135deg, #ff007a 0%, #ff5a00 100%);
 
-  --font-bulletin: "Bulletin"
+  --font-bulletin: "Bulletin";
+  
 }
 html {
   font-size: 16px;
@@ -114,5 +121,6 @@ body {
   font-size: 1em;
   background-color: var(--color-bg);
   color: var(--color-text);
-}
+  }
+
 

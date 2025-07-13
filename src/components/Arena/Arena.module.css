@@ -1,0 +1,28 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+}
+.road {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.car {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.carPark {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}

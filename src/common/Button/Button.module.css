@@ -1,5 +1,5 @@
 .button {
-    width: 5rem;
+    width: 6rem;
     height: 3rem;
     border: none;
     background-color: var(--color-button);
@@ -7,4 +7,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--font-bulletin);
+    
+}
+.button:hover {
+    cursor: pointer;
+    background-color: var(--color-button-hover);
+}
+.input, .generate {
+    width: auto;
+    height: 2rem;
+    padding: 1rem;
+}
+.start, .reset {
+    padding: 1rem;
+    width: fit-content;
+    height: 2rem;
+
 }
