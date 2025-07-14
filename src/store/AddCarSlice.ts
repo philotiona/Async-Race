@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export interface CarItem {
     name: string, 
     color: string,
-    id: number
+    id: number | null
 }
 interface CarTypes {
     cars: CarItem[],

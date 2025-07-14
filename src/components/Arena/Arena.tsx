@@ -4,6 +4,7 @@ import { type ReactNode, useState } from "react"
 import type { RootState } from "../../store/store"
 import { removeCar, setSelectedCar, type CarItem } from "../../store/AddCarSlice"
 import Button from "../../common/Button/Button"
+import { deleteGarage } from "../../api/garageThunk"
 
 
 export default function Arena(): ReactNode {
@@ -22,9 +23,9 @@ export default function Arena(): ReactNode {
     const handleNext = () => {
         setCurrentPage(currentPage < pagesCount ? currentPage + 1 : currentPage)
     }
-    const handleRemove = (id: number) => {
+    const handleRemove = async (id: number) => {
         dispatch(removeCar(id))
-
+        await deleteGarage(id)
     }
     return(
          <div className={styles.wrapper}>
@@ -35,7 +36,7 @@ export default function Arena(): ReactNode {
                                 <div className={styles.controls}>
                                     <Button text="Select" classname="select" onclick={() => {dispatch(setSelectedCar(item.id))}}/>
                                     <Button text="A" classname="push"/>
-                                    <Button text="Remove" classname="select" onclick={()=> handleRemove(item.id)}/>
+                                    <Button text="Remove" classname="select" onclick={()=> item.id != null && handleRemove(item.id)}/>
                                     <Button text="B" classname="stop"/>
                                 </div>
                                 <div className={styles.carSvg}>
